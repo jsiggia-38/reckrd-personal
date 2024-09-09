@@ -1,0 +1,82 @@
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #172D42;
+}
+
+.loginHeader {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.fieldContainer {
+  display: grid;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.loginSubHeading {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.accountText {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.line {
+  height: 1px;
+  background-color: black;
+  width: 95%;
+}
+
+.altLogin {
+  text-align: center;
+}
+
+.screenLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100vw;
+}
+
+.introText{
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 95px;
+  padding-left: 375px;
+  z-index: 1;
+}
+
+.link {
+  color: #376fa3;
+  text-decoration: underline;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.googleLogo {
+  height: 75px;
+  width: 75px;
+  justify-self: "center";
+  transition: transform .2s;
+}
+
+.googleLogo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
