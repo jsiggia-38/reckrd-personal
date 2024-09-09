@@ -31,14 +31,14 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     return unsubscribe;
   }, []);
 
-  async function initializeUser(user) {
+  async function initializeUser(user: any) {
     if (user) {
 
       setCurrentUser({ ...user });
 
       // check if provider is email and password login
       const isEmail = user.providerData.some(
-        (provider) => provider.providerId === "password"
+        (provider: any) => provider.providerId === "password"
       );
       setIsEmailUser(isEmail);
 
@@ -62,7 +62,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     isEmailUser,
     isGoogleUser,
     currentUser,
-    setCurrentUser
+    setCurrentUser,
+    setUserLoggedIn,
   };
 
   return (
